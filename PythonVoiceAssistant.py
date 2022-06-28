@@ -30,7 +30,7 @@ def wishMe():
     else:
         speak("Good Evening!")
 
-    speak("I am Jarvis Sir. Please tell me how may I help you")
+    speak("Hi Sunny . Please tell me how may I help you")
 
 def takeCommand():
     #It takes microphone input from the user and returns string output
@@ -110,3 +110,7 @@ if __name__ == "__main__":
             except Exception as e:
                 print(e)
                 speak("Sorry my friend. I am not able to send this email")
+
+        elif 'stop' in query:
+            speak("I am turning off now")
+            break
